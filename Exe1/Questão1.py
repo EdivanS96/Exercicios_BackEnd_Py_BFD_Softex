@@ -5,6 +5,7 @@ vogais = "aeiou"
 cont_vogais = 0
 cont_consoantes = 0
 
+
 for c in frase:
     if c.isalpha():
         if c in vogais:
