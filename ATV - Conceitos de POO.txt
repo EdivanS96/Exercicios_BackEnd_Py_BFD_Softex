@@ -1,0 +1,162 @@
+Lista de Exercicios – Conceitos de POO ( 20/09/2025 )
+
+Quais são as classes identificáveis?
+Quais são seus atributos (características ou propriedades)?
+Quais são seus métodos (ações ou comportamentos)?
+Existe algum relacionamento importante entre as classes? Se sim, qual tipo (associação, herança, etc.)?
+
+1° Biblioteca Digital
+Um sistema gerencia livros, autores e empréstimos. Cada livro tem título, ISBN e número de páginas. Um autor possui nome e nacionalidade. O sistema permite registrar novos livros, buscar livros por autor e controlar empréstimos.
+
+Resposta:
+
+- Classes:
+Livro
+Autor
+Empréstimo
+
+- Atributos:
+Livro: título, ISBN, número de paginas
+Autor: Nome, Nacionalidade
+Empréstimo: data do empréstimo, data de devoluç~ao, status (disponível ou alugado)
+
+- Métodos:
+Registrar novo livro
+Buscar livros por autor
+Realizar e controlar empréstimos
+
+- Relacionamento entre as classes:
+Sim. Um livro tem um autor (associaçao) e pode estar relacionado a um empréstimo. O empréstimo liga um livro a um leitor e registra se ele está disponível ou não.
+
+
+
+2° Aplicativo de Transporte
+Um app conecta passageiros e motoristas. Passageiros tem nome, telefone e histórico de corridas. Motoristas possuem CNH, placa do veículo e avaliação média. O aplicativo precisa calcular o valor da corrida e registrar o pagamento.
+
+
+Resposta:
+- Classes:
+Passageiro, Motorista, Corrida
+
+- Atributos:
+Passageiro: Nome, telefone, histórico de corridas
+Motorista: CNH, placa do veículo, avaliação média
+Corrida: origem, destino, valor, status, motorista, passageiro
+
+- Métodos:
+Calcular valor da corrida
+Registrar pagamento
+Solicitar corrida
+
+
+- Relacionamento entre as classes:
+A corrida liga o passageiro e o motorista (associação). Um passageiro e um motorista podem ter várias corridas.
+
+
+3° Escola de Música
+A escola oferece aulas de violão, piano e canto. Cada curso tem carga horária e valor da mensalidade. Alunos têm nome, idade e nível de conhecimento. Professores podem abrir novas turmas e registrar a presença dos alunos.
+
+
+Resposta:
+- Classes:
+Curso
+Aluno
+Professor
+Turma
+
+- Atributos:
+Curso: Nome (violão, piano, canto), carga horária, valor da mensalidade
+Aluno: Nome, idade, nível de conhecimento
+Professor: nome, especialidade
+Turma: curso, professor, lista de alunos, horário
+
+- Métodos:
+Criar turmas
+Registrar presença dos alunos
+Matricular aluno em turma
+
+
+- Relacionamento entre as classes:
+Um curso pode ter várias turmas. Uma turma tem um professor e vários alunos. Um aluno pode estar em várias turmas.
+
+4° Sistema de Hotelaria
+O hotel possui vários quartos, cada um com número, tipo (simples, duplo) e status (ocupado/livre). Hóspedes têm nome, documento e datas de entrada/saída. É possível reservar um quarto, fazer check-in e check-out.
+
+Resposta:
+- Classes:
+Quarto
+Hóspede
+Reserva
+
+- Atributos:
+Quarto: número, tipo (simples ou duplo), status (ocupado ou livre)
+Hóspede: nome, documento
+Reserva: datas de entrada e saída, quarto reservado, hóspede
+
+- Métodos:
+Status do quarto
+Reservar quarto
+Fazer check-in
+Fazer check-out
+
+- Relacionamento entre as classes:
+Uma reserva está ligada a um quarto e a um hóspede. Um hóspede pode fazer várias reservas.
+
+
+
+
+5° Loja Online
+Uma loja virtual vende produtos de diferentes categorias. Cada produto possui nome, preço e estoque. Clientes podem criar uma conta, adicionar produtos ao carrinho e finalizar a compra com diferentes formas de pagamento.
+
+Resposta:
+- Classes:
+Produto
+Cliente
+Carrinho
+Pedido
+
+- Atributos:
+Produto: nome, preço, estoque, categoria
+Cliente: nome, e-mail, endereço
+Carrinho: produtos adicionados, valor total
+Pedido: produtos, forma de pagamento, status
+
+
+- Métodos:
+Adicionar produto ao carrinho
+Finalizar compra
+Realizar pagamento
+
+
+- Relacionamento entre as classes:
+O cliente tem um carrinho e faz pedidos. O carrinho contém produtos. Um pedido é feito por um cliente e contém produtos.
+
+
+
+6° Rede Social de Fotos
+Usuários podem criar perfil, publicar fotos e comentar nas fotos de outros usuários. Cada foto tem legenda, data de postagem e curtidas. O sistema precisa permitir seguir outros usuários e enviar mensagens diretas.
+
+
+Resposta:
+- Classes:
+Usuário
+Foto
+Comentário
+Mensagem
+
+- Atributos:
+Usuário: nome, e-mail, biografia
+Foto: legenda, data, curtidas, tamanho
+Comentário: texto, autor, data
+Mensagem: conteúdo, remetente, destinatário, data
+
+- Métodos:
+Criar perfil
+Publicar foto
+Comentar em fotos
+Curtir foto
+Seguir outro usuário
+Enviar mensagens diretas
+
+- Relacionamento entre as classes:
+Um usuário pode postar várias fotos, comentar em fotos de outros, seguir outros usuários e trocar mensagens diretas
