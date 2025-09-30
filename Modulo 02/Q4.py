@@ -11,8 +11,6 @@ class Veiculo(ABC):
     def rodas(self):
         pass
 
-
-
 class Carro(Veiculo):
     @property
     def rodas(self):

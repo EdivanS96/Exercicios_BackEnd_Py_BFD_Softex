@@ -4,8 +4,6 @@ class Funcionario:
         self.nome = nome
         self.salario = salario
 
-
-
 class Gerente(Funcionario):
     def __init__(self, nome, salario, departamento):
         super().__init__(nome, salario)
